@@ -25,9 +25,9 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new webpack.NamedModulesPlugin(),
-  ],
+  optimization: {
+    moduleIds: 'named',
+  },
   resolve: {
     modules: ['src', 'node_modules'],
     extensions: [
